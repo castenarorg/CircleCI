@@ -36,7 +36,7 @@ jobs:
       - run:
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: sleep 1m
+          command: sleep 2m
       - run:
           name: Print Variables
           command: echo $ENVIRONMENT_TYPE && echo $ENVIRONMENT_NAME && echo $CIRCLE_WORKFLOW_ID && echo $CIRCLE_BUILD_NUM && echo $COMPASS_BUILD_STATUS
