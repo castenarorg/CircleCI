@@ -60,7 +60,7 @@ workflows:
       - production:
           context:
             - compass-integration-pmahendran-atlassian-test
-            #- basic1        
+            - basic1        
           post-steps:
             - compass/notify_deployment:
                 environment_type: production
